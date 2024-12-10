@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+}
+h1{
+    text-align: center;
+    position:relative;
+    top: 250px;
+    color:white;
+    margin:auto;
+}
+
+h4{
+    text-align: center;
+    position: relative;
+    top:270px;
+    color:white;
+    margin:auto;
+}
