@@ -7,6 +7,8 @@ h1{
     top: 250px;
     color:white;
     margin:auto;
+    font-family: "Mitr", sans-serif;
+    font-weight: 400;
 }
 
 h4{
@@ -15,4 +17,6 @@ h4{
     top:270px;
     color:white;
     margin:auto;
+    font-family: "Mitr", sans-serif;
+    font-weight: 200;
 }
