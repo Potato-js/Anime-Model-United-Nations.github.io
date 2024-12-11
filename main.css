@@ -25,12 +25,34 @@ body {
 }
   
 .nav__logo {
-    font-size: 1.5rem;
-    margin: auto 1rem;
+    font-size: 30px;
+    font-family: "Mitr", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display:flex;
+
+}
+
+.nav__logo a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    position:relative;
+    top:1rem;
+}
+
+.nav__logo{
+  text-decoration:none;
+  padding:1rem;
+  border-radius: 10px;
+  position:relative;
+  top:0.5rem;
 }
   
 .nav__menu ul {
-    margin: 0;
+    position:relative;
+    top:0.5rem;
+    margin: 1rem;
     padding: 0;
     display: flex;
 }
@@ -42,8 +64,9 @@ body {
 .nav__menu ul li a {
     text-decoration: none;
     color: #fff;
-    padding: 1rem;
+    padding: 1.5rem;
     display: block;
+    font-family: "Mitr", sans-serif;
 }
   
 .nav__menu li:hover {
@@ -68,8 +91,6 @@ body {
     border-radius: 0.625rem;
     transition: all ease-in-out 0.2s;
 }
-  
-  /* MEDIA QUERIES */
   
 @media screen and (max-width: 550px) {
     .nav__hamburger {
