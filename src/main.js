@@ -8,14 +8,14 @@ hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
 });
 
-navbar.onload(() =>{
-    navbar.toggle("active");
-});
-
 window.addEventListener("resize", () =>{
     if (window.matchMedia("max-width:550px").matches){
         closeMenu();
     }
+});
+
+addEventListener("scroll", () =>{
+    navbar.classList.toggle("active");
 });
 
 if(window.matchMedia("(max-width:550px").matches){
@@ -30,13 +30,12 @@ function closeMenu(){
         });
     });
 }
+
 var prevScrollpos = window.scrollY;
 window.onscroll = function() {
-  var currentScrollPos = window.scroll;
-  if (prevScrollpos > currentScrollPos) {
     navbar.style.top = "0";
-  } else {
-    navbar.style.top = "-px";
-  }
-  prevScrollpos = currentScrollPos;
+    var currentScrollPos = window.scrollY;
+    if (window.scrollY == "0"){
+        navbar.style.top = "-60px";
+    }
 }

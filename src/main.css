@@ -1,6 +1,11 @@
 body {
     margin: 0;
     padding: 0;
+    overflow-x:hidden;
+}
+
+body::-webkit-scrollbar{
+  display:none;
 }
 
 .bg {
@@ -20,11 +25,14 @@ body {
 /*Navbar CSS*/
 .nav {
     height: 3.2rem;
+    width:100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    position:sticky;
+    position:fixed;
+    top:-60px;
+    transition: top 0.3s;
 }
 
 .nav__logo {
@@ -54,11 +62,10 @@ body {
   
 .nav__menu ul {
     position:relative;
-    top: -1rem;;
+    top: 0.5rem;
     margin: 1rem;
     padding: 0;
     display: flex;
-    top: 0.5rem;
 }
   
 .nav__menu ul li {
@@ -144,13 +151,17 @@ body {
     .nav__hamburger.active :nth-child(3) {
       transform: rotate(-45deg) translate(0.45rem, -0.1875rem);
     }
+
+    .nav.active{
+      top:0;
+    }
 }
 
 /*Banner CSS*/
-.banner{
-    height: 42rem;
+.video{
+    height: 45rem;
     display: flex;
-    background-image: url("../Public/ANIMUN Assets/output-onlinegiftools.gif");
+    background-image: url("../Public/ANIMUN Assets/AAAAAAAAA1-ezgif.com-video-to-gif-converter.gif");
     background-size:cover;
     align-items: center;
     margin:-3.5rem;
@@ -160,8 +171,37 @@ body {
     overflow: hidden;
 }
 
+.video img{
+  position:relative;
+  left:45.5rem;
+  top:22rem;
+  animation: MoveUpDown 1.5s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown {
+  0%, 100%{
+    top:21.5rem;
+  }
+  50%{
+    top:22rem;
+  }
+}
+
+.banner{
+    height: 42rem;
+    display: flex;
+    background-color: #000;    
+    align-items: center;
+    margin:5rem;
+    padding:0rem;
+    border-radius: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .banner__text{
-  font-size:30px;
+  top:-10rem;
+  font-size:1.563vw;
   font-family: "Mitr", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -170,11 +210,11 @@ body {
   position:relative;
   justify-self: left;
   top:3rem;
-  right:31rem;
+  right:25rem;
 }
 
 .banner__countdown{
-  font-size: 50px;
+  font-size: 2.604vw;
   font-family: "Mitr", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -182,21 +222,20 @@ body {
   color:#fff;
   position:relative;
   justify-self: left;
-  top:-3rem;
   left:5rem;
 }
 
 .banner__countdown p{
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: white;
 }
 
 .banner__text{
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-color: white;
 }
 
 .banner__mascot{
   position:relative;
-  right:10rem;
+  right: 3rem;
 }
