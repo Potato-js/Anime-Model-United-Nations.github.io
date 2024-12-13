@@ -1,7 +1,22 @@
 body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     margin: 0;
     padding: 0;
     overflow-x:hidden;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    background-color: black;  
+    opacity: 0;
+  }
+
+  100% {
+    background-color: white;
+    opacity: 1;
+  }
 }
 
 body::-webkit-scrollbar{
@@ -33,6 +48,7 @@ body::-webkit-scrollbar{
     position:fixed;
     top:-60px;
     transition: top 0.3s;
+    z-index: 3;
 }
 
 .nav__logo {
@@ -188,11 +204,11 @@ body::-webkit-scrollbar{
 }
 
 .banner{
-    height: 42rem;
+    height:  50em;
     display: flex;
     background-color: #000;    
     align-items: center;
-    margin:5rem;
+    margin-top: 3.4rem;
     padding:0rem;
     border-radius: 30px;
     white-space: nowrap;
@@ -238,4 +254,5 @@ body::-webkit-scrollbar{
 .banner__mascot{
   position:relative;
   right: 3rem;
+  z-index: 0;
 }
