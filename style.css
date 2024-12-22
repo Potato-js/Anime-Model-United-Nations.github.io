@@ -24,10 +24,10 @@ h4{
     position:relative;
     top:25rem;
     background-color: white;
-    margin-left: 43rem;
-    margin-right: 43rem;
+    width:7vw;
     height:3rem;
     border-radius: 10px;
+    left:45rem;
 }
 
 .apply h3{
@@ -36,7 +36,7 @@ h4{
     position:relative;
     top:-2rem;
     white-space: nowrap;
-    right:1.25rem;
+    right:2rem;
 }
 .apply a{
     text-align: center;
