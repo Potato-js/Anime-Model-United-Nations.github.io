@@ -1,48 +1,48 @@
 body {
-    background-color: black;
+  background-color: black;
 }
-h1{
-    text-align: center;
-    position:relative;
-    top: 250px;
-    color:white;
-    margin:auto;
-    font-family: "Mitr", sans-serif;
-    font-weight: 400;
-}
-
-h4{
-    text-align: center;
-    position: relative;
-    top:270px;
-    color:white;
-    margin:auto;
-    font-family: "Mitr", sans-serif;
-    font-weight: 200;
-}
-.apply{
-    position:relative;
-    top:25rem;
-    background-color: white;
-    width:7vw;
-    height:3rem;
-    border-radius: 10px;
-    margin:auto;
+h1 {
+  text-align: center;
+  position: relative;
+  top: 250px;
+  color: white;
+  margin: auto;
+  font-family: "Mitr", sans-serif;
+  font-weight: 400;
 }
 
-.apply h3{
-    color:white;
-    text-align: center;
-    position:relative;
-    top:-2rem;
-    white-space: nowrap;
-    right:2rem;
+h4 {
+  text-align: center;
+  position: relative;
+  top: 270px;
+  color: white;
+  margin: auto;
+  font-family: "Mitr", sans-serif;
+  font-weight: 200;
 }
-.apply a{
-    text-align: center;
-    text-decoration: none;
-    color:black;
-    display:block;
-    position:relative;
-    bottom:1.75rem;
+.apply {
+  position: relative;
+  top: 25rem;
+  background-color: white;
+  width: 7vw;
+  height: 3rem;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.apply h3 {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: -2rem;
+  white-space: nowrap;
+  right: 1.25rem;
+}
+.apply a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  display: block;
+  position: relative;
+  bottom: 1.75rem;
 }
